@@ -1,0 +1,36 @@
+disabled_rules:
+  - todo
+opt_in_rules:
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - conditional_returns_on_newline
+  - empty_count
+  - explicit_init
+  - fatal_error_message
+  - first_where
+  - force_unwrapping
+  - multiline_parameters
+  - operator_usage_whitespace
+  - overridden_super_call
+  - pattern_matching_keywords
+  - private_outlet
+  - prohibited_super_call
+  - redundant_nil_coalescing
+  - single_test_class
+  - sorted_imports
+  - switch_case_on_newline
+  - trailing_closure
+  - unneeded_parentheses_in_closure_argument
+excluded:
+  - Carthage
+  - Pods
+  - {{cookiecutter.app_name}}/Resources/Generated/R.generated.swift
+identifier_name:
+  excluded:
+    - id
+    - to
+    - in
+    - at
+    - of
+    - up

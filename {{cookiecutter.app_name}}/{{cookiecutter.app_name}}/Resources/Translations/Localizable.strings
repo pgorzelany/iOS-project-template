@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  {{cookiecutter.app_name}}
+
+  Copyright © {{cookiecutter.company_name}}. All rights reserved.
+*/
+
+// MARK: Common
+
+"common.ok" = "Ok";
+"common.cancel" = "Cancel";
+"common.error" = "Error";
