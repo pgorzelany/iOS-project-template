@@ -1,5 +1,5 @@
 //
-//  MainNavigator.swift
+//  RootRouter.swift
 //  {{cookiecutter.app_name}}
 //
 //  Copyright © {{cookiecutter.company_name}}. All rights reserved.
@@ -7,11 +7,7 @@
 
 import UIKit
 
-class MainNavigator {
-
-    // MARK: Shared instance
-
-    static let shared = MainNavigator()
+class RootRouter {
 
     /** Replaces root view controller. You can specify the replacment animation type.
      If no animation type is specified, there is no animation */

@@ -1,5 +1,5 @@
 //
-//  NotificationsManager.swift
+//  NotificationsHandler.swift
 //  {{cookiecutter.app_name}}
 //
 //  Copyright © {{cookiecutter.company_name}}. All rights reserved.
@@ -9,13 +9,7 @@ import Foundation
 import UIKit
 import UserNotifications
 
-class NotificationsManager: NSObject {
-
-    static let shared = NotificationsManager()
-
-    // MARK: Properties
-
-    lazy var navigator = MainNavigator.shared
+class NotificationsHandler: NSObject {
 
     // MARK: Public methods
 
@@ -37,7 +31,7 @@ class NotificationsManager: NSObject {
     }
 }
 
-extension NotificationsManager: UNUserNotificationCenterDelegate {
+extension NotificationsHandler: UNUserNotificationCenterDelegate {
 
     func userNotificationCenter(
         _ center: UNUserNotificationCenter,

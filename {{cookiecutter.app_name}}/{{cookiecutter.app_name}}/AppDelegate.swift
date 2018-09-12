@@ -10,9 +10,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    lazy var navigator = MainNavigator.shared
-    lazy var deeplinkManager = DeeplinkManager.shared
-    lazy var notificationsManager = NotificationsManager.shared
+    lazy private var router = RootRouter()
+    lazy private var deeplinkHandler = DeeplinkHandler()
+    lazy private var notificationsHandler = NotificationsHandler()
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -20,10 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
 
         // Notifications
-        notificationsManager.configure()
+        notificationsHandler.configure()
 
         // App structure
-        navigator.loadMainAppStructure()
+        router.loadMainAppStructure()
 
         return true
     }
@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // To enable full universal link functionality add and configure the associated domain capability
         // https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html
         if userActivity.activityType == NSUserActivityTypeBrowsingWeb, let url = userActivity.webpageURL {
-            deeplinkManager.handleDeeplink(with: url)
+            deeplinkHandler.handleDeeplink(with: url)
         }
         return true
     }
@@ -43,6 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
         // To enable full remote notifications functionality you should first register the device with your api service
         //https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/
-        notificationsManager.handleRemoteNotification(with: userInfo)
+        notificationsHandler.handleRemoteNotification(with: userInfo)
     }
 }

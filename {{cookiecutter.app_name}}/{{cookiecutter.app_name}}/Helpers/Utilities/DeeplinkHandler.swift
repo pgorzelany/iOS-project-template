@@ -1,5 +1,5 @@
 //
-//  DeeplinkManager.swift
+//  DeeplinkHandler.swift
 //  {{cookiecutter.app_name}}
 //
 //  Copyright © {{cookiecutter.company_name}}. All rights reserved.
@@ -7,19 +7,15 @@
 
 import Foundation
 
-class DeeplinkManager {
+class DeeplinkHandler {
 
     enum Path: String {
         case resetPassword = "/api/password/reset" // example deeplink path
     }
 
-    // MARK: Shared instance
-
-    static let shared = DeeplinkManager()
-
     // MARK: Properties
 
-    var navigator = MainNavigator.shared
+    var navigator = RootRouter.shared
 
     // MARK: Methods
 
