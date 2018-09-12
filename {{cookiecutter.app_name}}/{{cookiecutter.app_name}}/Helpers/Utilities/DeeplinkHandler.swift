@@ -13,10 +13,6 @@ class DeeplinkHandler {
         case resetPassword = "/api/password/reset" // example deeplink path
     }
 
-    // MARK: Properties
-
-    var navigator = RootRouter.shared
-
     // MARK: Methods
 
     func handleDeeplink(with url: URL) {

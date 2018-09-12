@@ -38,13 +38,3 @@ You will get a prompt to give a new app name. Thats it, you should have a new fo
 ## Additional configuration
 
 You will have to manually configure the bundle id of the main target and test target.
-
-## Contents
-
-- Standard project structure
-- Swiftlint integration
-- R.swift integration
-- Separate AppDelegate for testing
-- MainNavigator - responsible for setting up the controller structure at app startup.
-- DeeplinkManager - responsible for handling deeplinks
-- NotificationsManager - responsible for handling notifications
