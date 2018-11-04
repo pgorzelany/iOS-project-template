@@ -23,7 +23,11 @@ This template should save project setup time and also provide a common foundatio
 * Base classes for handling deeplinks and notifications
 
 ## Prerequisites:
-- [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/installation.html)
+- This project needs [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/installation.html)
+
+```
+brew install cookiecutter
+```
 
 ## Usage
 
