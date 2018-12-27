@@ -26,6 +26,4 @@ private func getDelegateClassName() -> String {
 
 /// Load the actual app with the right app delegate depending on environment
 /// Based on https://marcosantadev.com/fake-appdelegate-unit-testing-swift/
-let args = UnsafeMutableRawPointer(CommandLine.unsafeArgv).bindMemory(to: UnsafeMutablePointer<Int8>.self,
-                                                                      capacity: Int(CommandLine.argc))
-UIApplicationMain(CommandLine.argc, args, nil, getDelegateClassName())
+_ = UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, getDelegateClassName())
