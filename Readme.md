@@ -12,14 +12,14 @@ This template should save project setup time and also provide a common foundatio
 
 * [Swiftlint](https://github.com/realm/SwiftLint) integration - A tool to enforce Swift style and conventions
 * [R.swift](https://github.com/mac-cain13/R.swift) integration - strong typed, autocompleted resources like images, fonts and segues
-* Separate AppDelegate for app and tests
+* [Separate AppDelegate for app and tests](https://marcosantadev.com/fake-appdelegate-unit-testing-swift/)
 * Dev/Staging/Prod configurations
-* Compiler performance profiling flags
-* Cocoapods integration
-* Gemfile for managing Cocoapods version
+* [Compiler performance profiling flags](https://www.jessesquires.com/blog/measuring-compile-times-xcode9/)
+* [Cocoapods integration](https://cocoapods.org)
+* [Gemfile for managing Cocoapods version](https://guides.cocoapods.org/using/a-gemfile.html)
 * Standard Readme
 * Standard project structure
-* Standard gitignore
+* [Standard gitignore](https://github.com/github/gitignore/blob/master/Swift.gitignore)
 * Base classes for handling deeplinks and notifications
 
 ## Prerequisites:
