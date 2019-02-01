@@ -9,6 +9,8 @@ When working for early stage startups I frequently had to start new projects fro
 
 This template should save project setup time and also provide a common foundation that each team member will be accustomed to so that you don't have to think and explore the project structure and foundations. They will always be the same.
 
+For a more in-depth writeup of the motivation and project, check out [my blog post](https://medium.com/@piotr.gorzelany/ios-project-best-practices-and-tools-c46135b8116d).
+
 ## Contains (best practices)
 
 * [Swiftlint](https://github.com/realm/SwiftLint) integration - A tool to enforce Swift style and conventions
