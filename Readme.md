@@ -1,7 +1,7 @@
 ## iOS Project Template
 
 A template to jumpstart your next iOS project integrating best practices and tools.
-Supports Xcode 10, Swift 4.2
+Supports Xcode 11, Swift 5.1
 
 ## Motivation
 
