@@ -1,5 +1,6 @@
 disabled_rules:
   - todo
+  - line_length
 opt_in_rules:
   - attributes
   - closure_end_indentation

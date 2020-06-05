@@ -1,0 +1,16 @@
+//
+//  Production.xcconfig
+//  {{cookiecutter.app_name}}
+//
+//  Copyright © 2020 {{cookiecutter.company_name}}. All rights reserved.
+//
+
+#include "Common.xcconfig"
+
+// App Settings
+APP_NAME = {{cookiecutter.app_name}}
+APP_URL_SCHEME = my-app-scheme
+APP_BUNDLE_ID = my-bundle-id
+
+// Networking
+SERVER_URL = my-prod-server-url.io

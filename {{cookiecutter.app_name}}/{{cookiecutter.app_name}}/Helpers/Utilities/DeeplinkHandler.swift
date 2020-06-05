@@ -36,4 +36,5 @@ class DeeplinkHandler {
     private func handleResetPasword(with components: URLComponents) {
         // implementation goes here, probably extract token from query items and send to api
     }
+    
 }

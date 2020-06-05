@@ -34,10 +34,22 @@ bundle exec pod install
 * Swiftlint - A tool to enforce Swift style and conventions.
 * R.swift - Get strong typed, autocompleted resources like images, fonts and segues in Swift projects
 
-## Project structure:
+## Structure:
 
-* Resources - fonts, strings, images, generated files etc.
-* SupportingFiles - configuration plist files
+* Resources - base constants, fonts, strings, images, generated files etc.
+* SupportingFiles - configurations, plist files
 * Models - model objects
-* Modules - contains app modules (UI + Code)
-* Helpers - protocols, extension and utility classes
+* Modules - contains app modules (Controllers, Views, ViewModels)
+* Helpers - extension and utility classes
+* Components - contains the generic reusable classes
+* Networking - the API 
+* * Services - all of the app services - a service is a layer between the Networking layer and the app modules, handling caches as well.
+* Coordinators - a coordinator is an object that handle coordination between modules (screen)
+
+## Configurations:
+
+The project has 2 schemes; 
+* One for development
+* One for production
+
+ 

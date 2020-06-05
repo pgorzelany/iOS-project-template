@@ -29,6 +29,7 @@ class NotificationsHandler: NSObject {
 
     func handleRemoteNotification(with userInfo: [AnyHashable: Any]) {
     }
+    
 }
 
 extension NotificationsHandler: UNUserNotificationCenterDelegate {
@@ -39,4 +40,5 @@ extension NotificationsHandler: UNUserNotificationCenterDelegate {
         withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler(.alert)
     }
+    
 }

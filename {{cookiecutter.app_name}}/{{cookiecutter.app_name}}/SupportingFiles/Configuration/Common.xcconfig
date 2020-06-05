@@ -1,0 +1,10 @@
+//
+//  Common.xcconfig
+//  {{cookiecutter.app_name}}
+//
+//  Copyright © 2020 {{cookiecutter.company_name}}. All rights reserved.
+//
+
+APP_VERSION = 1.0.0
+
+BUILD_NUMBER = 1
