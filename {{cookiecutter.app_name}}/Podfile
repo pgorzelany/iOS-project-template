@@ -1,16 +1,15 @@
-source 'https://github.com/CocoaPods/Specs.git'
-
+# Uncomment the next line to define a global platform for your project
 platform :ios, '10.0'
-
-use_frameworks!
 
 # ignore all warnings from all pods
 inhibit_all_warnings!
 
 target '{{cookiecutter.app_name}}' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
 
-  pod 'R.swift', '5.1.0'
-  pod 'SwiftLint', '0.37.0'
+  pod 'R.swift', '~> 5.2'
+  pod 'SwiftLint', '~> 0.40'
 
   target '{{cookiecutter.app_name}}Tests' do
     inherit! :search_paths

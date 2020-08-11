@@ -27,10 +27,13 @@ class ConfigurationManager {
 
     private let configurationKey = "Configuration"
     private let configurationDictionaryName = "Configuration"
-    private let backendUrlKey = "backendUrl"
 
     let activeConfiguration: Configuration
     private let activeConfigurationDictionary: NSDictionary
+
+    private enum Keys: String {
+        case backendUrlKey = "backendUrl"
+    }
 
     // MARK: Lifecycle
 
@@ -58,12 +61,13 @@ class ConfigurationManager {
         return value
     }
 
-    func isRunning(in configuration: Configuration) -> Bool {
+    func isRunning(configuration: Configuration) -> Bool {
         return activeConfiguration == configuration
     }
 
-    func getBackendUrl() -> URL {
-        let backendUrlString: String = getActiveVariableValue(forKey: backendUrlKey)
+    // MARK: Computed properties
+    var backendUrl: URL {
+        let backendUrlString: String = getActiveVariableValue(forKey: Keys.backendUrlKey.rawValue)
         guard let backendUrl = URL(string: backendUrlString) else {
             fatalError("Backend URL missing")
         }
